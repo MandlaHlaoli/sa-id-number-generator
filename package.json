@@ -1,6 +1,6 @@
 {
   "name": "sa-id-number-generator",
-  "homepage": "https://MandlaHlaoli.github.io/a-id-number-generator",
+  "homepage": "https://MandlaHlaoli.github.io/sa-id-number-generator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
