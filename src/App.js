@@ -2,6 +2,7 @@ import "./styles/styles.css";
 import React, { useState } from "react";
 import NavBar from "../src/components/NavBar";
 import Footer from "./components/Footer";
+import SAIDExplanation from "./components/SAIDExplanation";
 
 function App() {
   const [generatedId, setGeneratedId] = useState(""); // State to hold the generated ID
@@ -105,6 +106,7 @@ function App() {
           <h2>Generated ID Number:</h2>
           <p id="idNumber">{generatedId || "[ID Number will appear here]"}</p>
         </div>
+        <SAIDExplanation />
       </div>
       <Footer />
     </div>

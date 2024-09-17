@@ -1,0 +1,30 @@
+.id-explanation {
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.id-explanation h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.id-explanation p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #34495e;
+}
+
+.id-explanation ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #2c3e50;
+}
+
+.id-explanation li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
