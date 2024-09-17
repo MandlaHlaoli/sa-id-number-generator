@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sa-id-number-generator/static/css/main.2f7fcd5c.css",
-    "main.js": "/sa-id-number-generator/static/js/main.ace49e01.js",
+    "main.css": "/sa-id-number-generator/static/css/main.8627a55f.css",
+    "main.js": "/sa-id-number-generator/static/js/main.9565cec1.js",
     "static/js/453.629173bf.chunk.js": "/sa-id-number-generator/static/js/453.629173bf.chunk.js",
     "index.html": "/sa-id-number-generator/index.html",
-    "main.2f7fcd5c.css.map": "/sa-id-number-generator/static/css/main.2f7fcd5c.css.map",
-    "main.ace49e01.js.map": "/sa-id-number-generator/static/js/main.ace49e01.js.map",
+    "main.8627a55f.css.map": "/sa-id-number-generator/static/css/main.8627a55f.css.map",
+    "main.9565cec1.js.map": "/sa-id-number-generator/static/js/main.9565cec1.js.map",
     "453.629173bf.chunk.js.map": "/sa-id-number-generator/static/js/453.629173bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f7fcd5c.css",
-    "static/js/main.ace49e01.js"
+    "static/css/main.8627a55f.css",
+    "static/js/main.9565cec1.js"
   ]
 }
