@@ -1,0 +1,48 @@
+.about {
+    background-color: #f8f9fa;
+    /* Light background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h1 {
+    color: #2c3e50;
+    /* Dark color for the title */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #34495e;
+    /* Slightly lighter dark color for text */
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.about ul li {
+    background-color: #ecf0f1;
+    /* Light gray background for list items */
+    border: 1px solid #bdc3c7;
+    /* Border for list items */
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.about strong {
+    color: #2980b9;
+    /* Accent color for strong text */
+}
