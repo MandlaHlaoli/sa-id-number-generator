@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/a-id-number-generator/static/css/main.2f7fcd5c.css",
+    "main.js": "/a-id-number-generator/static/js/main.27d0f23a.js",
+    "static/js/453.629173bf.chunk.js": "/a-id-number-generator/static/js/453.629173bf.chunk.js",
+    "index.html": "/a-id-number-generator/index.html",
+    "main.2f7fcd5c.css.map": "/a-id-number-generator/static/css/main.2f7fcd5c.css.map",
+    "main.27d0f23a.js.map": "/a-id-number-generator/static/js/main.27d0f23a.js.map",
+    "453.629173bf.chunk.js.map": "/a-id-number-generator/static/js/453.629173bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f7fcd5c.css",
+    "static/js/main.27d0f23a.js"
+  ]
+}
