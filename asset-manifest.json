@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sa-id-number-generator/static/css/main.d2bebca5.css",
-    "main.js": "/sa-id-number-generator/static/js/main.d6625999.js",
+    "main.css": "/sa-id-number-generator/static/css/main.12786df4.css",
+    "main.js": "/sa-id-number-generator/static/js/main.f0e4c025.js",
     "static/js/453.d7241bdf.chunk.js": "/sa-id-number-generator/static/js/453.d7241bdf.chunk.js",
     "index.html": "/sa-id-number-generator/index.html",
-    "main.d2bebca5.css.map": "/sa-id-number-generator/static/css/main.d2bebca5.css.map",
-    "main.d6625999.js.map": "/sa-id-number-generator/static/js/main.d6625999.js.map",
+    "main.12786df4.css.map": "/sa-id-number-generator/static/css/main.12786df4.css.map",
+    "main.f0e4c025.js.map": "/sa-id-number-generator/static/js/main.f0e4c025.js.map",
     "453.d7241bdf.chunk.js.map": "/sa-id-number-generator/static/js/453.d7241bdf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2bebca5.css",
-    "static/js/main.d6625999.js"
+    "static/css/main.12786df4.css",
+    "static/js/main.f0e4c025.js"
   ]
 }
