@@ -7,6 +7,7 @@ import "./styles/GeneralStyles.css";
 import "./styles/Form.css";
 import "./styles/Button.css";
 import About from "./components/About";
+import BarcodeComponent from "./components/BarCode";
 
 function App() {
   const [generatedId, setGeneratedId] = useState("");
@@ -104,6 +105,7 @@ function App() {
         <div className="id-output">
           <h2>Generated ID Number:</h2>
           <p id="idNumber">{generatedId || "[ID Number will appear here]"}</p>
+          <BarcodeComponent barcode={generatedId} />
         </div>
 
         <SAIDExplanation />
