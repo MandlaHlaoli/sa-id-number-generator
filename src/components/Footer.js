@@ -20,7 +20,7 @@ function Footer() {
         <p className="social-note">Feel free to connect with me on:</p>
         <div className="footer-links">
           <a
-            href="https://github.com/HlaoliMandla"
+            href="https://github.com/MandlaHlaoli"
             className="footer-link"
             target="_blank"
             rel="noopener noreferrer"
