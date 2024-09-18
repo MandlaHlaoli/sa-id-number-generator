@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/SAIDExplanation.css"; // Create a CSS file for custom styles
+import "../styles/SAIDExplanation.css";
 
 function SAIDExplanation() {
   return (

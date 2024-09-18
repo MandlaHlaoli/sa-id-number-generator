@@ -5,12 +5,12 @@ import Footer from "./components/Footer";
 import SAIDExplanation from "./components/SAIDExplanation";
 
 function App() {
-  const [generatedId, setGeneratedId] = useState(""); // State to hold the generated ID
+  const [generatedId, setGeneratedId] = useState("");
 
   const generateIdNumber = () => {
-    const dob = document.getElementById("dob").value; // Get Date of Birth
-    const gender = document.getElementById("gender").value; // Get Gender
-    const citizenship = document.getElementById("citizenship").value; // Get Citizenship
+    const dob = document.getElementById("dob").value;
+    const gender = document.getElementById("gender").value;
+    const citizenship = document.getElementById("citizenship").value;
 
     if (!dob || !gender || !citizenship) {
       alert("Please fill in all fields.");
@@ -19,36 +19,30 @@ function App() {
 
     const idNumber = createValidIdNumber(dob, gender, citizenship);
 
-    setGeneratedId(idNumber); // Set the valid generated ID number in the state
+    setGeneratedId(idNumber);
   };
 
   const createValidIdNumber = (dob, gender, citizenship) => {
-    const year = dob.substring(2, 4); // Last two digits of the year
-    const month = dob.substring(5, 7); // Two digits for the month
-    const day = dob.substring(8, 10); // Two digits for the day
+    const year = dob.substring(2, 4);
+    const month = dob.substring(5, 7);
+    const day = dob.substring(8, 10);
 
-    // Generate a random 4-digit sequence for gender (0000-4999 for female, 5000-9999 for male)
     const randomGenderSeq = Math.floor(
       Math.random() * 5000 + (gender === "male" ? 5000 : 0)
     )
       .toString()
       .padStart(4, "0");
 
-    // Citizen Indicator: 0 for SA citizen, 1 for permanent resident
     const citizenIndicator = citizenship === "sa" ? "0" : "1";
 
-    // Generate a random 2-digit sequence for the race (not commonly used now, but part of the ID format)
     const randomRaceSeq = Math.floor(Math.random() * 100)
       .toString()
       .padStart(2, "0");
 
-    // Combine all parts into the ID number without the checksum
     const partialIdNumber = `${year}${month}${day}${randomGenderSeq}${citizenIndicator}${randomRaceSeq}`;
 
-    // Add checksum to the ID number
     const checkDigit = calculateCheckSum(partialIdNumber);
 
-    // Full valid ID number
     return `${partialIdNumber}${checkDigit}`;
   };
 
@@ -78,7 +72,7 @@ function App() {
         <h1>South African ID Number Generator</h1>
 
         <div className="form-group">
-          <label htmlFor="dob">Date of Birth (YYYY-MM-DD)</label>
+          <label htmlFor="dob">Date of Birth (MM-DD-YYYY)</label>
           <input type="date" id="dob" name="dob" className="input-field" />
         </div>
 

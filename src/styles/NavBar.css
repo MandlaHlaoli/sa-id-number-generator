@@ -1,21 +1,16 @@
 .navbar {
     position: fixed;
-    /* Makes the navbar stay in place */
     top: 0;
     width: 100%;
-    /* Ensures it spans the full width of the page */
     background-color: #2c3e50;
     /* Dark background */
     color: #ecf0f1;
-    /* Light text */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    /* Ensures the navbar stays on top of other elements */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Adds a subtle shadow for emphasis */
 }
 
 .navbar-logo {
@@ -29,7 +24,6 @@
     padding: 0;
     display: flex;
     gap: 15px;
-    /* Space between links */
 }
 
 .navbar-links li {
@@ -48,10 +42,9 @@
     background-color: #3498db;
     /* Hover background color */
     color: #fff;
-    /* Hover text color */
 }
 
 body {
     margin-top: 70px;
-    /* Push the content down to account for the fixed navbar height */
+   
 }
