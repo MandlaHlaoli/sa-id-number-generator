@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sa-id-number-generator/static/css/main.d2bebca5.css",
-    "main.js": "/sa-id-number-generator/static/js/main.135de091.js",
+    "main.js": "/sa-id-number-generator/static/js/main.d6625999.js",
     "static/js/453.d7241bdf.chunk.js": "/sa-id-number-generator/static/js/453.d7241bdf.chunk.js",
     "index.html": "/sa-id-number-generator/index.html",
     "main.d2bebca5.css.map": "/sa-id-number-generator/static/css/main.d2bebca5.css.map",
-    "main.135de091.js.map": "/sa-id-number-generator/static/js/main.135de091.js.map",
+    "main.d6625999.js.map": "/sa-id-number-generator/static/js/main.d6625999.js.map",
     "453.d7241bdf.chunk.js.map": "/sa-id-number-generator/static/js/453.d7241bdf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d2bebca5.css",
-    "static/js/main.135de091.js"
+    "static/js/main.d6625999.js"
   ]
 }
