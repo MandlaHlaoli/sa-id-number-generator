@@ -27,12 +27,20 @@ function SAIDExplanation() {
         </li>
         <li>
           <strong>Check Digit:</strong> The last digit is a checksum used to
-          validate the ID number.
+          validate the ID number. This is calculated using the{" "}
+          <a
+            href="https://en.wikipedia.org/wiki/Luhn_algorithm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Luhn algorithm
+          </a>
+          , which helps verify the accuracy of the number.
         </li>
       </ul>
       <p>
-        This app uses the correct format to generate valid South African ID
-        numbers based on the user's inputs.
+        This app uses the correct format, including the Luhn algorithm, to
+        generate valid South African ID numbers based on the user's inputs.
       </p>
     </section>
   );

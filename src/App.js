@@ -78,7 +78,7 @@ function App() {
         <h1>South African ID Number Generator</h1>
 
         <div className="form-group">
-          <label htmlFor="dob">Date of Birth (MM-DD-YYYY)</label>
+          <label htmlFor="dob">Date of Birth (DD-MM-YYYY)</label>
           <input type="date" id="dob" name="dob" className="input-field" />
         </div>
 
