@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "../src/components/NavBar";
 import Footer from "./components/Footer";
 import SAIDExplanation from "./components/SAIDExplanation";
@@ -8,9 +8,21 @@ import "./styles/Form.css";
 import "./styles/Button.css";
 import About from "./components/About";
 import BarcodeComponent from "./components/BarCode";
+import { initGA, logPageView } from "./analytics";
 
 function App() {
   const [generatedId, setGeneratedId] = useState("");
+
+  useEffect(() => {
+    initGA();
+    logPageView();
+
+    window.addEventListener("popstate", logPageView);
+
+    return () => {
+      window.removeEventListener("popstate", logPageView);
+    };
+  }, []);
 
   const generateIdNumber = () => {
     const dob = document.getElementById("dob").value;
