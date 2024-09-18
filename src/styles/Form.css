@@ -1,0 +1,46 @@
+/* Form group styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+
+
+.generate-icon {
+    margin-left: 10px;
+    stroke-width: 2;
+}
+
+.generate-btn:focus {
+    outline: none;
+}
+
+/* ID output styles */
+.id-output {
+    margin-top: 20px;
+}
+
+.id-output h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.id-output p {
+    font-size: 1.2em;
+    color: #555;
+}

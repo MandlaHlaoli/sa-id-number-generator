@@ -1,8 +1,12 @@
-import "./styles/styles.css";
 import React, { useState } from "react";
 import NavBar from "../src/components/NavBar";
 import Footer from "./components/Footer";
 import SAIDExplanation from "./components/SAIDExplanation";
+import "./styles/NavBar.css";
+import "./styles/GeneralStyles.css";
+import "./styles/Form.css";
+import "./styles/Button.css";
+import About from "./components/About";
 
 function App() {
   const [generatedId, setGeneratedId] = useState("");
@@ -68,6 +72,7 @@ function App() {
   return (
     <div>
       <NavBar />
+      <About />
       <div className="container">
         <h1>South African ID Number Generator</h1>
 
@@ -100,6 +105,7 @@ function App() {
           <h2>Generated ID Number:</h2>
           <p id="idNumber">{generatedId || "[ID Number will appear here]"}</p>
         </div>
+
         <SAIDExplanation />
       </div>
       <Footer />
