@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
-import NavBar from "../src/components/NavBar";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import SAIDExplanation from "./components/SAIDExplanation";
+import About from "./components/About";
+import BarcodeComponent from "./components/BarCode";
+import { initGA, logPageView } from "./analytics";
 import "./styles/NavBar.css";
 import "./styles/GeneralStyles.css";
 import "./styles/Form.css";
 import "./styles/Button.css";
-import About from "./components/About";
-import BarcodeComponent from "./components/BarCode";
-import { initGA, logPageView } from "./analytics";
+import { createValidIdNumber } from "./helpers/idGenerator"; // Move helper function to separate file
 
 function App() {
   const [generatedId, setGeneratedId] = useState("");
@@ -16,12 +17,8 @@ function App() {
   useEffect(() => {
     initGA();
     logPageView();
-
     window.addEventListener("popstate", logPageView);
-
-    return () => {
-      window.removeEventListener("popstate", logPageView);
-    };
+    return () => window.removeEventListener("popstate", logPageView);
   }, []);
 
   const generateIdNumber = () => {
@@ -35,51 +32,7 @@ function App() {
     }
 
     const idNumber = createValidIdNumber(dob, gender, citizenship);
-
     setGeneratedId(idNumber);
-  };
-
-  const createValidIdNumber = (dob, gender, citizenship) => {
-    const year = dob.substring(2, 4);
-    const month = dob.substring(5, 7);
-    const day = dob.substring(8, 10);
-
-    const randomGenderSeq = Math.floor(
-      Math.random() * 5000 + (gender === "male" ? 5000 : 0)
-    )
-      .toString()
-      .padStart(4, "0");
-
-    const citizenIndicator = citizenship === "sa" ? "0" : "1";
-
-    const randomRaceSeq = Math.floor(Math.random() * 100)
-      .toString()
-      .padStart(2, "0");
-
-    const partialIdNumber = `${year}${month}${day}${randomGenderSeq}${citizenIndicator}${randomRaceSeq}`;
-
-    const checkDigit = calculateCheckSum(partialIdNumber);
-
-    return `${partialIdNumber}${checkDigit}`;
-  };
-
-  const calculateCheckSum = (id) => {
-    let sum = 0;
-    let shouldDouble = false;
-
-    for (let i = id.length - 1; i >= 0; --i) {
-      let digit = parseInt(id.charAt(i), 10);
-
-      if (shouldDouble) {
-        digit *= 2;
-        if (digit > 9) {
-          digit = (digit % 10) + 1;
-        }
-      }
-      sum += digit;
-      shouldDouble = !shouldDouble;
-    }
-    return (sum * 9) % 10;
   };
 
   return (
