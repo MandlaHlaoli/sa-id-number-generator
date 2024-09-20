@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sa-id-number-generator/static/css/main.12786df4.css",
-    "main.js": "/sa-id-number-generator/static/js/main.3c26bcbd.js",
+    "main.css": "/sa-id-number-generator/static/css/main.d0918add.css",
+    "main.js": "/sa-id-number-generator/static/js/main.87817197.js",
     "static/js/453.d7241bdf.chunk.js": "/sa-id-number-generator/static/js/453.d7241bdf.chunk.js",
     "index.html": "/sa-id-number-generator/index.html",
-    "main.12786df4.css.map": "/sa-id-number-generator/static/css/main.12786df4.css.map",
-    "main.3c26bcbd.js.map": "/sa-id-number-generator/static/js/main.3c26bcbd.js.map",
+    "main.d0918add.css.map": "/sa-id-number-generator/static/css/main.d0918add.css.map",
+    "main.87817197.js.map": "/sa-id-number-generator/static/js/main.87817197.js.map",
     "453.d7241bdf.chunk.js.map": "/sa-id-number-generator/static/js/453.d7241bdf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12786df4.css",
-    "static/js/main.3c26bcbd.js"
+    "static/css/main.d0918add.css",
+    "static/js/main.87817197.js"
   ]
 }
