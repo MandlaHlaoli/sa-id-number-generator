@@ -9,7 +9,7 @@ import "./styles/NavBar.css";
 import "./styles/GeneralStyles.css";
 import "./styles/Form.css";
 import "./styles/Button.css";
-import { createValidIdNumber } from "./helpers/idGenerator"; // Move helper function to separate file
+import { createValidIdNumber } from "./helpers/idGenerator";
 
 function App() {
   const [generatedId, setGeneratedId] = useState("");
@@ -23,16 +23,22 @@ function App() {
 
   const generateIdNumber = () => {
     const dob = document.getElementById("dob").value;
-    const gender = document.getElementById("gender").value;
-    const citizenship = document.getElementById("citizenship").value;
+    const gender =
+      document.getElementById("gender").value === "male" ? "M" : "F";
+    const citizenship =
+      document.getElementById("citizenship").value === "sa" ? "0" : "1";
 
     if (!dob || !gender || !citizenship) {
       alert("Please fill in all fields.");
       return;
     }
 
-    const idNumber = createValidIdNumber(dob, gender, citizenship);
-    setGeneratedId(idNumber);
+    try {
+      const idNumber = createValidIdNumber(dob, gender, citizenship);
+      setGeneratedId(idNumber);
+    } catch (error) {
+      alert(error.message);
+    }
   };
 
   return (
